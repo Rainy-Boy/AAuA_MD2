@@ -9,7 +9,7 @@ T = 40  # slieksnis: detaļas ar mazāku absolūto vērtību tiek nonullētas
 
 def forward(x):
     a, b = x[0::2], x[1::2]
-    return np.vstack(((a + b) / 2, (a - b) / 2))  # augšā l, apakšā h
+    return np.vstack(((a + b) / 2, (a - b) / 2))
 
 def inverse(x):
     n = x.shape[0] // 2
